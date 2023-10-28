@@ -9,9 +9,24 @@ import Settings from "./components/Settings/Settings";
 import EmployersList from "./components/employers-list/employers-list";
 const App = (props) => {
   const [database, setDatabase] = React.useState([
-    { name: "John C.", like: 500, increase: false, id: 1 },
-    { name: "Carl W.", like: 500, increase: false, id: 2 },
-    { name: "Tamirlan", like: 500, increase: true, id: 3 },
+    {
+      name: "John C.",
+      description: "agshasghagsahgsahsahgsg",
+      increase: false,
+      id: 1,
+    },
+    {
+      name: "Carl W.",
+      description: "agshasghagsahgsahsahgsg",
+      increase: false,
+      id: 2,
+    },
+    {
+      name: "Tamirlan",
+      description: "agshasghagsahgsahsahgsg",
+      increase: true,
+      id: 3,
+    },
   ]);
   const [maxid, setMaxid] = React.useState(4);
   const deleteItem = (id) => {
@@ -22,11 +37,11 @@ const App = (props) => {
     // setDatabase(newArray);
     setDatabase(database.filter((item) => item.id !== id));
   };
-  const addItem = (name, salary) => {
+  const addItem = (name, description) => {
     setMaxid(maxid + 1);
     const newItem = {
       name,
-      salary,
+      description,
       increase: false,
       id: maxid,
     };

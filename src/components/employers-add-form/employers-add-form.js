@@ -28,7 +28,7 @@ const EmployersAddForm = ({ addItem }) => {
           onChange={onChangeName}
         />
         <input
-          type="number"
+          type="text"
           className="form-control new-post-label"
           value={salary}
           onChange={onChangeSalary}
