@@ -18,7 +18,7 @@ const EmployersAddForm = ({ addItem }) => {
   // }, [name, salary]);
   return (
     <div className="app-add-form">
-      <h3>Добавьте друга</h3>
+      <h3>Add post</h3>
       <form className="add-form d-flex">
         <input
           type="text"
